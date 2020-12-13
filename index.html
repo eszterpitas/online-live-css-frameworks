@@ -11,6 +11,29 @@
     <title>CodeBerry - CSS Keretrendszerek</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://i2.wp.com/i.pinimg.com/originals/91/53/93/9153939d7544582c1fd8c692b626958d.png" height="40px" width="64px" class="d-inline-block align-top">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <a class="navbar-brand" href="#">Home</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meow</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
     <!-- 2. rakj ide egy fejlécet (navbart)
     - logóval
     - 3 menüponttal
@@ -18,7 +41,15 @@
 
     <!-- Csak egy szürke doboz -->
     <div class="p-3 m-5 bg-light">
-      Hello!
+      Hello! Itt vannak a gombok :)
+      <div class="p-3 m-5 bg-light">
+        <button type="button" class="btn btn-success disabled">Egy random megnyomhatatlan gomb</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Sárga körvonalú gomb</button>
+        <button type="button" class="btn btn-success btn-lg">NAGY zöld gomb</button>
+      </div>
+
       <!-- 1. Rakj ide 
         - egy gombot
         - egy "primary" gombot
@@ -26,7 +57,40 @@
         - egy sárga körvonalú gombot
         - egy NAGY zöld gombot -->
     </div>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card">
+            <img src="http://placekitten.com/600/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">My favourite snacks</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Let's get some snack</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <img src="http://placekitten.com/600/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">My favourite places</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go to the fluffiest place</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <img src="http://placekitten.com/600/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Find the best cat-box for you</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go to the cat-boxes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 3. Rakj ide 3 oszlopot
       - legyen bennük 1-1 kártya
       - ez legyen a kép a kártyán: http://placekitten.com/600/300 -->
@@ -41,7 +105,19 @@
 
     <!-- 6. Adj hozzá informatív tooltipeket a barátságos üzenetedhez -->
 
-    <!-- 7. Essen a hó -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script> 
 
+    <!-- 7. Essen a hó -->
+    <div class="position-relative"></div>
+      <div class="position-absolute top-10 fixed-bottom" id="particles-js">
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> 
+  </div>
+    <script> particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });</script>
+    
   </body>
 </html>
